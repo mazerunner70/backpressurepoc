@@ -59,13 +59,13 @@
        with_items: "{{ filelist.files }}" 
 
      - name: set desktop icon
-       file:
+       copy:
          src: /vagrant/files/desktop/shortcut/jetbrains-idea-ce.desktop
          dest: /home/vagrant/.local/share/applications
          mode: 0600
        
      - name: set locale
-       file:
+       copy:
          src: /vagrant/files/locale/locale
          dest: /etc/default
          owner: root

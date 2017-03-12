@@ -8,7 +8,7 @@ import java.io.IOException;
  * Created by vagrant on 05/03/17.
  */
 public interface MqClient {
-    void sendMessage(MqMessage mqMessage) throws IOException;
+    void sendMessage(MqMessage mqMessage) throws MqClientException;
 
     void initialiseConnection() throws MqClientException;
 
@@ -20,7 +20,7 @@ public interface MqClient {
 
     void createProducer(String s) throws MqClientException;
 
-    MapMessage convertMessageToJms(MqMessage mqMessage) throws IOException;
+    MapMessage convertMessageToJms(MqMessage mqMessage) throws MqClientException;
 
     void close() throws MqClientException;
 }
