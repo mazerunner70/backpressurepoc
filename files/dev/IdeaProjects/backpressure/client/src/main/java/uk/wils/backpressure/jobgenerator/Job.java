@@ -6,8 +6,28 @@ package uk.wils.backpressure.jobgenerator;
  */
 public class Job {
 
-    private double duration;
+    private int durationMillis;
 
-    private double retentionTime;
+    private int retentionTimeMillis;
 
+    public Job(int durationMillis, int retentionTimeMillis) {
+        this.durationMillis = durationMillis;
+        this.retentionTimeMillis = retentionTimeMillis;
+    }
+
+    public int getDurationMillis() {
+        return durationMillis;
+    }
+
+    public void setDurationMillis(int durationMillis) {
+        this.durationMillis = durationMillis;
+    }
+
+    public int getRetentionTimeMillis() {
+        return retentionTimeMillis;
+    }
+
+    public void setRetentionTimeMillis(int retentionTimeMillis) {
+        this.retentionTimeMillis = retentionTimeMillis;
+    }
 }

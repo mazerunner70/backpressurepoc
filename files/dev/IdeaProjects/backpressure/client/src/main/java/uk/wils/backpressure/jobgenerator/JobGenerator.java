@@ -9,7 +9,7 @@ public interface JobGenerator {
 
     void setDuration(int durationMilliseconds);
 
-    void setDuration68PercentRange(double rangeMilliseconds);
+    void setDuration68PercentRange(int rangeMilliseconds);
 
     void setRetentionPeriod(int retentionPeriodMilliseconds);
 
