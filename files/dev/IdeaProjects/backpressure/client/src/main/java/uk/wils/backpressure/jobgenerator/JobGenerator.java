@@ -1,7 +1,7 @@
 package uk.wils.backpressure.jobgenerator;
 
 /**
- * Created by vagrant on 12/03/17.
+ * Created by William O'Hara on 12/03/17.
  */
 public interface JobGenerator {
 

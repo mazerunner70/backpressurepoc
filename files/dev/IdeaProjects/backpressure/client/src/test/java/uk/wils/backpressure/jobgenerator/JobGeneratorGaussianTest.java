@@ -10,9 +10,13 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 /**
- * Created by vagrant on 12/03/17.
+ * Created by William O'Hara on 12/03/17.
  */
 public class JobGeneratorGaussianTest {
+
+    public static double[] STD_FRACTIONS = new double[] {0.682689492137086, 0.954499736103642, 0.997300203936740, 0.999936657516334, 0.999999426696856, 0.999999998026825, 0.999999999997440};
+
+
     @Before
     public void setUp() throws Exception {
     }
@@ -21,7 +25,7 @@ public class JobGeneratorGaussianTest {
     public void tearDown() throws Exception {
     }
 
-    @Test
+
     public void testGenerate() {
         JobGenerator jobGenerator = new JobGeneratorGaussian();
         int durationMillis = 43*60*1000;
@@ -44,13 +48,12 @@ public class JobGeneratorGaussianTest {
             ensureSize(stdDevRetentionList, stdDevRetention);
             stdDevRetentionList.set(stdDevRetention-1, stdDevRetentionList.get(stdDevRetention-1)+1);
         }
-        double[] stdFractions = new double[] {0.682689492137086, 0.954499736103642, 0.997300203936740, 0.999936657516334, 0.999999426696856, 0.999999998026825, 0.999999999997440};
-        double[] stdIntervals = new double[stdFractions.length];
-        stdIntervals[0] = stdFractions[0];
-        for (int i = 1 ; i < stdFractions.length; i++) {
-            stdIntervals[i] = stdFractions[i] - stdFractions[i-1];
+        double[] stdIntervals = new double[STD_FRACTIONS.length];
+        stdIntervals[0] = STD_FRACTIONS[0];
+        for (int i = 1 ; i < STD_FRACTIONS.length; i++) {
+            stdIntervals[i] = STD_FRACTIONS[i] - STD_FRACTIONS[i-1];
         }
-        double tolerance = 0.3;
+        double tolerance = 0.35;
         for (int i = 0; i < stdDevDurationList.size(); i++) {
             double fraction = stdDevDurationList.get(i)/iterations;
             double lowerBound = stdIntervals[i] * (1-tolerance);

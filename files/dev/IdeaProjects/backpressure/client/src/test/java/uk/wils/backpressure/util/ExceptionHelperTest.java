@@ -7,7 +7,7 @@ import java.io.IOException;
 import static org.junit.Assert.*;
 
 /**
- * Created by vagrant on 11/03/17.
+ * Created by William O'Hara on 11/03/17.
  */
 public class ExceptionHelperTest {
 

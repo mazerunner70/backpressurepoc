@@ -1,25 +1,301 @@
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#10
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@437d42a0[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 3]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#10
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#10
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@268c030f[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-39169-1490546228076-0:7) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@370ef50b[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.006 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@113f9078[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-39169-1490546228076-0:7) uptime 0.286 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-39169-1490546228076-0:7) is shutdown
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
+WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
+INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:1) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:1) started
+INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@18b8d173[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#0] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@76ececd[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#1] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@564d59fb[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-33665-1490546689270-4:1, address: vm://localhost#0, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-33665-1490546689270-4:1, clientId = ID:myjava-33665-1490546689270-3:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-33665-1490546689270-4:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-33665-1490546689270-4:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-33665-1490546689270-4:1
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#0
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@564d59fb[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 6]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#0
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#0
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@66e17eff[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.001 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@76ececd[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:1) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@18b8d173[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.001 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@22d8f4ed[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:1) uptime 7.315 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:1) is shutdown
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
+WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
+INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:2) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:2) started
+INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@3434a4f0[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#2] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@3b9ac754[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#3] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@3b85a838[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-33665-1490546689270-7:1, address: vm://localhost#2, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-33665-1490546689270-7:1, clientId = ID:myjava-33665-1490546689270-6:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-33665-1490546689270-7:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-33665-1490546689270-7:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-33665-1490546689270-7:1
+DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4b325930[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3b9ac754[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#2
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3b85a838[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#2
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#2
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:2) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3434a4f0[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@25a1a012[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:2) uptime 0.244 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:2) is shutdown
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
+WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
+INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:3) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:3) started
+INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@ce12fbb[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#4] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@443a53df[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#5] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@66808eee[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-33665-1490546689270-10:1, address: vm://localhost#4, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-33665-1490546689270-10:1, clientId = ID:myjava-33665-1490546689270-9:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-33665-1490546689270-10:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: queue://Test-Q
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=0, pending=0 toPageIn: 0, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 0, dequeueCount: 0, memUsage:0, maxPageSize:200
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Queue
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for queue name Test-Q to broker at vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-33665-1490546689270-10:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-33665-1490546689270-10:1
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@40717ed[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@443a53df[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#4
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@66808eee[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#4
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#4
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:3) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@ce12fbb[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.001 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@528c8c1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:3) uptime 0.860 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:3) is shutdown
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
+WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
+INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:4) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:4) started
+INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f78d415[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#6] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@27960b1e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#7] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@99412ed[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-33665-1490546689270-13:1, address: vm://localhost#6, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-33665-1490546689270-13:1, clientId = ID:myjava-33665-1490546689270-12:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
+DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-33665-1490546689270-13:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: queue://Test-Q
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=0, pending=0 toPageIn: 0, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 0, dequeueCount: 0, memUsage:0, maxPageSize:200
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Queue
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for queue name Test-Q to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 1 properties in a MapMessage
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.Queue - embedded-broker Message ID:myjava-33665-1490546689270-13:1:1:1:1 sent to queue://Test-Q
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=1, pending=0 toPageIn: 1, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 1, dequeueCount: 0, memUsage:1048, maxPageSize:200
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Sent message via producer for name ActiveMQMessageProducer { value=ID:myjava-33665-1490546689270-13:1:1:1 } to broker at vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-33665-1490546689270-13:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-33665-1490546689270-13:1
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@118acf70[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#6
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@99412ed[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 4]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#6
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#6
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@27960b1e[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:4) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1f78d415[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 5] is shutdown: true and terminated: true took: 0.004 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@e91af20[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:4) uptime 0.553 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:4) is shutdown
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
+WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
+INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:5) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:5) started
+INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@6221b13b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:5) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@6221b13b[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@101cf747[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:5) uptime 0.140 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:5) is shutdown
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
+WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
+INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:6) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:6) started
+INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@790d8fdd[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#8] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@3dbd7107[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#9] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@34e24dcf[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-33665-1490546689270-17:1, address: vm://localhost#8, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-33665-1490546689270-17:1, clientId = ID:myjava-33665-1490546689270-16:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-33665-1490546689270-17:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: queue://Test-Q
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=0, pending=0 toPageIn: 0, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 0, dequeueCount: 0, memUsage:0, maxPageSize:200
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Queue
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for queue name Test-Q to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 0 properties in a MapMessage
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 1 properties in a MapMessage
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 2 properties in a MapMessage
+DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-33665-1490546689270-17:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-33665-1490546689270-17:1
+DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@26d5a317[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3dbd7107[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#8
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@34e24dcf[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#8
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#8
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:6) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@790d8fdd[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.001 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@89caf47[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:6) uptime 0.233 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:6) is shutdown
+INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
+WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
+INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:7) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:7) started
+INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
+DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@370ef50b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
+DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
+INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#10] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@268c030f[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#11] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@1ef7e4d9[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-33665-1490546689270-20:1, address: vm://localhost#10, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-33665-1490546689270-20:1, clientId = ID:myjava-33665-1490546689270-19:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-41604-1489315562598-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-33665-1490546689270-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-41604-1489315562598-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-41604-1489315562598-20:1
+DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-33665-1490546689270-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-33665-1490546689270-20:1
 DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@7fd4e815[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2eda2062[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@be164d8[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@268c030f[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#10
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@a7ca686[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1ef7e4d9[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#10
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#10
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-41604-1489315562598-0:7) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@c4d2c44[Shutting down, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: false took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1142d377[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-41604-1489315562598-0:7) uptime 0.138 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-41604-1489315562598-0:7) is shutdown
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:7) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@370ef50b[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@113f9078[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:7) uptime 0.193 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-33665-1490546689270-0:7) is shutdown
 ERROR ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.thread.TaskRunnerFactory - Error in thread 'ActiveMQ VMTransport: vm://localhost#11-2'
 org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[embedded-broker] is being stopped
 	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:205)
@@ -34,98 +310,98 @@ org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[embedded
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
 WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
 INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:1) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:1) started
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:1) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:1) started
 INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
 DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@620c8641[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@4d21c56e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
 WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#0] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@43b5021c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#1] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@3025b1b3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-46046-1489315789879-4:1, address: vm://localhost#0, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-46046-1489315789879-4:1, clientId = ID:myjava-46046-1489315789879-3:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#0] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@3138953b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#1] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@245351c2[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-43323-1490546881629-4:1, address: vm://localhost#0, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-43323-1490546881629-4:1, clientId = ID:myjava-43323-1490546881629-3:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
 DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-46046-1489315789879-4:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-43323-1490546881629-4:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-46046-1489315789879-4:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-46046-1489315789879-4:1
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-43323-1490546881629-4:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-43323-1490546881629-4:1
 DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#0
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3025b1b3[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 6]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@245351c2[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 7]
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#0
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#0
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2574a9e3[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@43b5021c[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5809fa26[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3138953b[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:1) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@620c8641[Shutting down, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: false took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@40bf4386[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:1) uptime 3.928 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:1) is shutdown
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:1) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4d21c56e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.002 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4971f459[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:1) uptime 12.712 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:1) is shutdown
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
 WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
 INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:2) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:2) started
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:2) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:2) started
 INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
 DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@14d25b6e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@4c07d1fc[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
 WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#2] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@740dcae3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#3] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@64224ae9[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-46046-1489315789879-7:1, address: vm://localhost#2, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-46046-1489315789879-7:1, clientId = ID:myjava-46046-1489315789879-6:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#2] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@52831a73[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#3] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5db0505b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-43323-1490546881629-7:1, address: vm://localhost#2, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-43323-1490546881629-7:1, clientId = ID:myjava-43323-1490546881629-6:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
 DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-46046-1489315789879-7:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-43323-1490546881629-7:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-46046-1489315789879-7:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-46046-1489315789879-7:1
-DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2b6c7012[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@740dcae3[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-43323-1490546881629-7:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-43323-1490546881629-7:1
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2506e949[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@52831a73[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#2
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@64224ae9[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 2]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5db0505b[Running, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#2
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#2
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:2) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@14d25b6e[Terminated, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@50b46e24[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:2) uptime 0.105 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:2) is shutdown
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:2) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4c07d1fc[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@54af3cb9[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:2) uptime 0.191 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:2) is shutdown
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
 WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
 INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:3) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:3) started
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:3) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:3) started
 INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
 DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@1c30cb85[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@236fdf[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
 WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#4] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@7455dacb[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#5] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@181f99a6[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-46046-1489315789879-10:1, address: vm://localhost#4, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-46046-1489315789879-10:1, clientId = ID:myjava-46046-1489315789879-9:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#4] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@653fb8d1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#5] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@e0bdaa4[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-43323-1490546881629-10:1, address: vm://localhost#4, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-43323-1490546881629-10:1, clientId = ID:myjava-43323-1490546881629-9:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
 DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-46046-1489315789879-10:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-43323-1490546881629-10:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
@@ -137,45 +413,56 @@ DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region
 DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for name Test-Q to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for queue name Test-Q to broker at vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-46046-1489315789879-10:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-46046-1489315789879-10:1
+DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-43323-1490546881629-10:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-43323-1490546881629-10:1
 DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@34d480b9[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.001 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@7455dacb[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@27b337bb[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@653fb8d1[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#4
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@181f99a6[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 3]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@e0bdaa4[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 2]
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#4
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#4
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:3) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1c30cb85[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1df5c7e3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:3) uptime 0.472 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:3) is shutdown
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:3) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@236fdf[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.001 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3b97907c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:3) uptime 0.829 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:3) is shutdown
+ERROR ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.thread.TaskRunnerFactory - Error in thread 'ActiveMQ VMTransport: vm://localhost#5-2'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[embedded-broker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:205)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:273)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
 WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
 INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:4) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:4) started
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:4) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:4) started
 INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
 DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5e0c4f21[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@59096b66[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
 WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#6] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@166c2c17[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#7] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@71797fe3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-46046-1489315789879-13:1, address: vm://localhost#6, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-46046-1489315789879-13:1, clientId = ID:myjava-46046-1489315789879-12:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#6] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@65be88ae[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#7] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@50a6a38e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-43323-1490546881629-13:1, address: vm://localhost#6, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-43323-1490546881629-13:1, clientId = ID:myjava-43323-1490546881629-12:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
 DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-46046-1489315789879-13:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-43323-1490546881629-13:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
@@ -187,63 +474,63 @@ DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region
 DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for name Test-Q to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for queue name Test-Q to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 1 properties in a MapMessage
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.Queue - embedded-broker Message ID:myjava-46046-1489315789879-13:1:1:1:1 sent to queue://Test-Q
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.Queue - embedded-broker Message ID:myjava-43323-1490546881629-13:1:1:1:1 sent to queue://Test-Q
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=1, pending=0 toPageIn: 1, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 1, dequeueCount: 0, memUsage:1048, maxPageSize:200
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Sent message via producer for name ActiveMQMessageProducer { value=ID:myjava-46046-1489315789879-13:1:1:1 } to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Sent message via producer for name ActiveMQMessageProducer { value=ID:myjava-43323-1490546881629-13:1:1:1 } to broker at vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-46046-1489315789879-13:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-46046-1489315789879-13:1
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-43323-1490546881629-13:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-43323-1490546881629-13:1
 DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2f3928ac[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@12952aff[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@65be88ae[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#6
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@71797fe3[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 5]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@50a6a38e[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 5]
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#6
 DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#6
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@166c2c17[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:4) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5e0c4f21[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 5] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@9cfc77[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:4) uptime 0.362 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:4) is shutdown
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:4) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@59096b66[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 5] is shutdown: true and terminated: true took: 0.001 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@7f5614f9[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:4) uptime 0.652 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:4) is shutdown
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
 WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
 INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:5) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:5) started
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:5) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:5) started
 INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
 DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@7418d76e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@480cbe2e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:5) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@7418d76e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.001 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@480cbe2e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:5) uptime 0.078 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:5) is shutdown
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:5) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@480cbe2e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@616a06e3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:5) uptime 0.143 seconds
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:5) is shutdown
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
 WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
 INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:6) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:6) started
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:6) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:6) started
 INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
 DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@6c3f1658[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@42297bdf[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
 WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#8] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5eb0a686[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#9] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@6c353c21[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-46046-1489315789879-17:1, address: vm://localhost#8, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-46046-1489315789879-17:1, clientId = ID:myjava-46046-1489315789879-16:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#8] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5bb911c1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#9] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@499a3eb4[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-43323-1490546881629-17:1, address: vm://localhost#8, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-43323-1490546881629-17:1, clientId = ID:myjava-43323-1490546881629-16:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
 DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-46046-1489315789879-17:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-43323-1490546881629-17:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
@@ -255,334 +542,58 @@ DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region
 DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for name Test-Q to broker at vm://localhost
+INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for queue name Test-Q to broker at vm://localhost
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 0 properties in a MapMessage
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 1 properties in a MapMessage
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 2 properties in a MapMessage
 DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-46046-1489315789879-17:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-46046-1489315789879-17:1
+DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-43323-1490546881629-17:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-43323-1490546881629-17:1
 DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2de9ca6[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#8
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@6c353c21[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 2]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#8
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#8
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5eb0a686[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@44598ef7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5bb911c1[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#8
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:6) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@6c3f1658[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.001 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5a1dddba[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:6) uptime 0.161 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:6) is shutdown
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@499a3eb4[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 2]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#8
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#8
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:6) is shutting down
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@42297bdf[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.001 seconds.
+DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@3ebc955b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:6) uptime 0.289 seconds
+ERROR ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.thread.TaskRunnerFactory - Error in thread 'ActiveMQ VMTransport: vm://localhost#9-2'
+org.apache.activemq.broker.BrokerStoppedException: Broker BrokerService[embedded-broker] is being stopped
+	at org.apache.activemq.broker.TransportConnection$1.onCommand(TransportConnection.java:205)
+	at org.apache.activemq.transport.ResponseCorrelator.onCommand(ResponseCorrelator.java:116)
+	at org.apache.activemq.transport.MutexTransport.onCommand(MutexTransport.java:50)
+	at org.apache.activemq.transport.vm.VMTransport.iterate(VMTransport.java:273)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:6) is shutdown
 INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
 WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
 INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:7) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:7) started
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:7) is starting
+INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-43323-1490546881629-0:7) started
 INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
 DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@c4d2c44[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@21a46ff1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
 WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
 DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
 INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#10] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@2eda2062[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#11] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@2bb6c87b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-46046-1489315789879-20:1, address: vm://localhost#10, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-46046-1489315789879-20:1, clientId = ID:myjava-46046-1489315789879-19:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
+DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#10] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@6bcae9[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#11] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5049fa9e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-43323-1490546881629-20:1, address: vm://localhost#10, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-43323-1490546881629-20:1, clientId = ID:myjava-43323-1490546881629-19:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
 DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
 DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-46046-1489315789879-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
+DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-43323-1490546881629-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
 INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-46046-1489315789879-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-46046-1489315789879-20:1
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5f6b53ed[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2eda2062[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#10
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2bb6c87b[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#10
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#10
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:7) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@c4d2c44[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5c48b72c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:7) uptime 0.111 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-46046-1489315789879-0:7) is shutdown
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
-WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
-INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:1) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:1) started
-INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
-DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@620c8641[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#0] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@43b5021c[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#1] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@14bc3648[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-37437-1489315940000-4:1, address: vm://localhost#0, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-37437-1489315940000-4:1, clientId = ID:myjava-37437-1489315940000-3:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-37437-1489315940000-4:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-37437-1489315940000-4:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-37437-1489315940000-4:1
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#1-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#0
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@14bc3648[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 6]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#0
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#0
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2574a9e3[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@43b5021c[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:1) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@620c8641[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@40bf4386[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:1) uptime 3.716 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:1) is shutdown
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
-WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
-INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:2) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:2) started
-INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
-DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@14d25b6e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#2] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@740dcae3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#3] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@219d9038[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-37437-1489315940000-7:1, address: vm://localhost#2, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-37437-1489315940000-7:1, clientId = ID:myjava-37437-1489315940000-6:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
-DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#3-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-37437-1489315940000-7:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-37437-1489315940000-7:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-37437-1489315940000-7:1
-DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#3-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2b6c7012[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@740dcae3[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 6]
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#2
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@219d9038[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#2
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#2
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:2) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@14d25b6e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@50b46e24[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:2) uptime 0.148 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:2) is shutdown
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
-WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
-INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:3) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:3) started
-INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
-DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@1c30cb85[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#4] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@7455dacb[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#5] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@181f99a6[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-37437-1489315940000-10:1, address: vm://localhost#4, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-37437-1489315940000-10:1, clientId = ID:myjava-37437-1489315940000-9:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
-DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#5-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-37437-1489315940000-10:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: queue://Test-Q
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=0, pending=0 toPageIn: 0, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 0, dequeueCount: 0, memUsage:0, maxPageSize:200
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Queue
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for name Test-Q to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-37437-1489315940000-10:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-37437-1489315940000-10:1
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#5-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2a87ba34[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#4
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@181f99a6[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 2]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#4
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#4
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@7455dacb[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:3) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1c30cb85[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@42ef042a[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:3) uptime 0.535 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:3) is shutdown
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
-WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
-INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:4) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:4) started
-INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
-DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@1df5c7e3[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#6] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@2c18a3ea[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#7] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@f36722b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-37437-1489315940000-13:1, address: vm://localhost#6, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-37437-1489315940000-13:1, clientId = ID:myjava-37437-1489315940000-12:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
-DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#7-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-37437-1489315940000-13:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: queue://Test-Q
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=0, pending=0 toPageIn: 0, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 0, dequeueCount: 0, memUsage:0, maxPageSize:200
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Queue
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for name Test-Q to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 1 properties in a MapMessage
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.Queue - embedded-broker Message ID:myjava-37437-1489315940000-13:1:1:1:1 sent to queue://Test-Q
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=1, pending=0 toPageIn: 1, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 1, dequeueCount: 0, memUsage:1048, maxPageSize:200
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Sent message via producer for name ActiveMQMessageProducer { value=ID:myjava-37437-1489315940000-13:1:1:1 } to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-37437-1489315940000-13:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-37437-1489315940000-13:1
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#7-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2f3928ac[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#6
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@f36722b[Running, pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 3]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#6
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#6
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2c18a3ea[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:4) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@1df5c7e3[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 5] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@9cfc77[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:4) uptime 0.274 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:4) is shutdown
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
-WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
-INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:5) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:5) started
-INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
-DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@7418d76e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:5) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@7418d76e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@480cbe2e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:5) uptime 0.103 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:5) is shutdown
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
-WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
-INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:6) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:6) started
-INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
-DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@6c3f1658[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#8] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@5eb0a686[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#9] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@4fbcfba6[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-37437-1489315940000-17:1, address: vm://localhost#8, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-37437-1489315940000-17:1, clientId = ID:myjava-37437-1489315940000-16:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
-DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#9-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-37437-1489315940000-17:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created session to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created queue name test1 to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: queue://Test-Q
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.Queue - queue://Test-Q, subscriptions=0, memory=0%, size=0, pending=0 toPageIn: 0, force:false, Inflight: 0, pagedInMessages.size 0, pagedInPendingDispatch.size 0, enqueueCount: 0, dequeueCount: 0, memUsage:0, maxPageSize:200
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Queue
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Producer.Queue.Test-Q
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created producer for name Test-Q to broker at vm://localhost
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 0 properties in a MapMessage
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 1 properties in a MapMessage
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Storing 2 properties in a MapMessage
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-37437-1489315940000-17:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-37437-1489315940000-17:1
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#9-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@2de9ca6[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0] is shutdown: true and terminated: true took: 0.000 seconds.
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopping connection: vm://localhost#8
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@4fbcfba6[Running, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 4]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Stopped transport: vm://localhost#8
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-2 org.apache.activemq.broker.TransportConnection - Connection Stopped: vm://localhost#8
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5eb0a686[Running, pool size = 1, active threads = 0, queued tasks = 0, completed tasks = 7]
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - Shutting down VM connectors for broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost stopped
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Stopping Embedded ActiveMQ Broker: embedded-broker
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:6) is shutting down
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@6c3f1658[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 4] is shutdown: true and terminated: true took: 0.001 seconds.
-DEBUG main org.apache.activemq.util.ThreadPoolUtils - Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@5a1dddba[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:6) uptime 0.173 seconds
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:6) is shutdown
-INFO main org.apache.activemq.junit.EmbeddedActiveMQBroker - Starting embedded ActiveMQ broker: embedded-broker
-WARN main org.apache.activemq.broker.BrokerService - Memory Usage for the Broker (1024mb) is more than the maximum available for the JVM: 473 mb - resetting to 70% of maximum available: 331 mb
-INFO main org.apache.activemq.broker.BrokerService - Using Persistence Adapter: MemoryPersistenceAdapter
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:7) is starting
-INFO main org.apache.activemq.broker.BrokerService - Apache ActiveMQ 5.14.3 (embedded-broker, ID:myjava-37437-1489315940000-0:7) started
-INFO main org.apache.activemq.broker.BrokerService - For help or more information please see: http://activemq.apache.org
-DEBUG main org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.MasterBroker
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ BrokerService[embedded-broker] Task] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@c4d2c44[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-WARN main org.apache.activemq.broker.BrokerRegistry - Broker localhost not started so using embedded-broker instead
-DEBUG main org.apache.activemq.transport.vm.VMTransportFactory - binding to broker: localhost
-INFO main org.apache.activemq.broker.TransportConnector - Connector vm://localhost started
-DEBUG main org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#10] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@2eda2062[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ BrokerService[embedded-broker] Task-1 org.apache.activemq.thread.TaskRunnerFactory - Initialized TaskRunnerFactory[ActiveMQ VMTransport: vm://localhost#11] using ExecutorService: java.util.concurrent.ThreadPoolExecutor@430ab72d[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnection - Setting up new connection id: ID:myjava-37437-1489315940000-20:1, address: vm://localhost#10, info: ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:myjava-37437-1489315940000-20:1, clientId = ID:myjava-37437-1489315940000-19:1, clientIp = null, userName = null, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false, failoverReconnect = false}
-DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding destination: topic://ActiveMQ.Advisory.Connection
-DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker adding consumer: ID:myjava-37437-1489315940000-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-INFO main uk.wils.backpressure.mqclient.MqClientImpl - Created connection to broker at vm://localhost
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-37437-1489315940000-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnection - remove connection id: ID:myjava-37437-1489315940000-20:1
-DEBUG ActiveMQ VMTransport: vm://localhost#11-2 org.apache.activemq.broker.TransportConnector - Publishing: vm://localhost for broker transport URI: vm://localhost
+DEBUG ActiveMQ VMTransport: vm://localhost#11-1 org.apache.activemq.broker.region.AbstractRegion - embedded-broker removing consumer: ID:myjava-43323-1490546881629-20:1:-1:1 for destination: ActiveMQ.Advisory.TempQueue,ActiveMQ.Advisory.TempTopic

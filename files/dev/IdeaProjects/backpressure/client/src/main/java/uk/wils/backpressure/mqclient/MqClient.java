@@ -2,10 +2,9 @@ package uk.wils.backpressure.mqclient;
 
 
 import javax.jms.MapMessage;
-import java.io.IOException;
 
 /**
- * Created by vagrant on 05/03/17.
+ * Created by William O'Hara on 05/03/17.
  */
 public interface MqClient {
     void sendMessage(MqMessage mqMessage) throws MqClientException;
@@ -18,7 +17,7 @@ public interface MqClient {
 
     void createQueue(String queueName) throws MqClientException;
 
-    void createProducer(String s) throws MqClientException;
+    void createProducer(String queueName) throws MqClientException;
 
     MapMessage convertMessageToJms(MqMessage mqMessage) throws MqClientException;
 

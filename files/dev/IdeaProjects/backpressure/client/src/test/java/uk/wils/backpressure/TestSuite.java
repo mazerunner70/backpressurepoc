@@ -2,14 +2,12 @@ package uk.wils.backpressure;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
 import uk.wils.backpressure.mqclient.MqClientTest;
 import uk.wils.backpressure.mqclient.MqMessageTest;
-import uk.wils.backpressure.util.ExceptionHelper;
 import uk.wils.backpressure.util.ExceptionHelperTest;
 
 /**
- * Created by vagrant on 11/03/17.
+ * Created by William O'Hara on 11/03/17.
  */
 public class TestSuite {
 

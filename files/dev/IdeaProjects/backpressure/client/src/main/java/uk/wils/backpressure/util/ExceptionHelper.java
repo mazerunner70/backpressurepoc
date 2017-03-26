@@ -1,12 +1,10 @@
 package uk.wils.backpressure.util;
 
-import java.io.BufferedWriter;
-import java.io.CharArrayReader;
 import java.io.CharArrayWriter;
 import java.io.PrintWriter;
 
 /**
- * Created by vagrant on 11/03/17.
+ * Created by William O'Hara on 11/03/17.
  */
 public class ExceptionHelper {
     public static void printExceptionText(Throwable throwable, PrintWriter printWriter) {

@@ -50,4 +50,5 @@ Temporary Items
 *.tar.gz
 .vagrant
 target/
+.idea
 

@@ -2,12 +2,10 @@ package uk.wils.backpressure.mqclient;
 
 import org.junit.Test;
 
-import javax.jms.Message;
-
 import static org.junit.Assert.*;
 
 /**
- * Created by vagrant on 09/03/17.
+ * Created by William O'Hara on 09/03/17.
  */
 public class MqMessageTest {
 

@@ -3,7 +3,7 @@ package uk.wils.backpressure.jobgenerator;
 import java.util.Random;
 
 /**
- * Created by vagrant on 12/03/17.
+ * Created by William O'Hara on 12/03/17.
  */
 public class JobGeneratorGaussian implements JobGenerator {
     private int durationMilliseconds;

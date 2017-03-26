@@ -9,15 +9,13 @@ import javax.jms.JMSException;
 import javax.jms.MapMessage;
 import java.io.IOException;
 import java.util.*;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.fail;
 import static uk.wils.backpressure.mqclient.MqClientImpl.countPropertiesInAMessage;
 
 /**
- * Created by vagrant on 05/03/17.
+ * Created by William O'Hara on 05/03/17.
  */
 public class MqClientTest {
 
@@ -54,7 +52,7 @@ public class MqClientTest {
             mqClient.initialiseConnection();
             fail("Should have failed with JMS exception, as transport stream is invalid");
         } catch (MqClientException e) {
-
+            //All good
         }
         //Close should not fail, should do nothing
         mqClient.close();
@@ -132,9 +130,10 @@ public class MqClientTest {
     }
 
     public Map<String, Object> asMap(MapMessage mapMessage) {
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<>();
         List<String> keyList = null;
         try {
+            //noinspection unchecked,unchecked
             keyList = Collections.list(mapMessage.getMapNames());
             for (String key : keyList) map.put(key, mapMessage.getObject(key));
         } catch (JMSException e) {

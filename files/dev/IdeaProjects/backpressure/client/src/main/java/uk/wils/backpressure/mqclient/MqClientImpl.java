@@ -3,7 +3,6 @@ package uk.wils.backpressure.mqclient;
 import org.apache.activemq.ActiveMQConnectionFactory;
 
 import javax.jms.*;
-import java.io.IOException;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.Spliterator;
@@ -16,7 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by vagrant on 05/03/17.
+ * Created by William O'Hara on 05/03/17.
  */
 public class MqClientImpl implements MqClient {
 
@@ -70,7 +69,7 @@ public class MqClientImpl implements MqClient {
         } catch (JMSException e) {
             throw new MqClientException("Failed to create producer", e);
         }
-        logger.info("Created producer for name {} to broker at {}",queueName, brokerUrlString);
+        logger.info("Created producer for queue name {} to broker at {}",queueName, brokerUrlString);
     }
 
     public void sendMessage(MqMessage mqMessage) throws MqClientException{
@@ -100,6 +99,7 @@ public class MqClientImpl implements MqClient {
     }
 
     public static long countPropertiesInAMessage(MapMessage mapMessage) throws JMSException{
+        //noinspection unchecked
         return enumerationAsStream(mapMessage.getMapNames()).count();
     }
 
