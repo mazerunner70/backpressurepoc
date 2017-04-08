@@ -6,9 +6,21 @@ import javax.jms.MapMessage;
  * Created by William O'Hara on 08/04/17.
  */
 public class MqClientMock implements MqClient {
+    private int sentMessagesCount = 0;
+    private MqMessage lastMqMessage = null;
+
+    public int getSentMessagesCount() {
+        return sentMessagesCount;
+    }
+
+    public MqMessage getLastMqMessage() {
+        return lastMqMessage;
+    }
+
     @Override
     public void sendMessage(MqMessage mqMessage) throws MqClientException {
-
+        sentMessagesCount++;
+        lastMqMessage = mqMessage;
     }
 
     @Override

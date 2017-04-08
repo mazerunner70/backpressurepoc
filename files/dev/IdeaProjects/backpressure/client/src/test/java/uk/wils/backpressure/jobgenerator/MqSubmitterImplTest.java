@@ -3,9 +3,11 @@ package uk.wils.backpressure.jobgenerator;
 import org.junit.Before;
 import org.junit.Test;
 import uk.wils.backpressure.mqclient.MqClient;
+import uk.wils.backpressure.mqclient.MqClientException;
 import uk.wils.backpressure.mqclient.MqClientMock;
 import uk.wils.backpressure.mqclient.MqMessage;
 
+import javax.jms.MapMessage;
 import java.util.concurrent.DelayQueue;
 
 import static org.junit.Assert.*;
@@ -37,7 +39,7 @@ public class MqSubmitterImplTest {
     }
 
     @Test
-    public void testMqSubmitMarshall() {
+    public void testMqSubmitMarshall() throws MqClientException {
         MqClientMock mqClientMock = new MqClientMock();
         MqSubmitterImpl.MqSubmit mqSubmit = new MqSubmitterImpl.MqSubmit();
         mqSubmit.setMqClient(mqClientMock);
@@ -47,6 +49,9 @@ public class MqSubmitterImplTest {
         assertEquals("id", "id 1", mqMessage.getBody().get("id"));
         assertEquals("durationMillis", "1", mqMessage.getBody().get("durationMillis"));
         assertEquals("retentionTimeMillis", "2", mqMessage.getBody().get("retentionTimeMillis"));
+        mqSubmit.execute(job);
+        assertEquals("one message sent", 1, mqClientMock.getSentMessagesCount());
+        assertSame("same message", mqMessage, mqClientMock.getLastMqMessage());
     }
 
 }
