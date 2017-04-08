@@ -3,6 +3,8 @@ package uk.wils.backpressure.jobgenerator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import uk.wils.backpressure.util.GaussianRangedValueBuilder;
+import uk.wils.backpressure.util.RangedValueBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,15 +29,13 @@ public class JobGeneratorGaussianTest {
 
 
     public void testGenerate() {
-        JobGenerator jobGenerator = new JobGeneratorGaussian();
         int durationMillis = 43*60*1000;
         int duration1StdDevMillis= 5*60*1000;
         int retentionPeriodMillis = 20*1000;
         int retentionPeriod1StdDevMillis = 5*60*1000;
-        jobGenerator.setDuration(durationMillis);
-        jobGenerator.setDuration68PercentRange(duration1StdDevMillis);
-        jobGenerator.setRetentionPeriod(retentionPeriodMillis);
-        jobGenerator.setRetention68PercentRange(retentionPeriod1StdDevMillis);
+        RangedValueBuilder durationRangedValueBuilder = new GaussianRangedValueBuilder(durationMillis,duration1StdDevMillis );
+        RangedValueBuilder retentionRangedValueBuilder = new GaussianRangedValueBuilder(retentionPeriodMillis,retentionPeriod1StdDevMillis );
+        JobGenerator jobGenerator = new JobGeneratorGaussian(durationRangedValueBuilder, retentionRangedValueBuilder);
         List<Integer> stdDevDurationList = new ArrayList<>();
         List<Integer> stdDevRetentionList = new ArrayList<>();
         double iterations = 10000.0;
