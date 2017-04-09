@@ -51,7 +51,7 @@ public class MqSubmitterImplTest {
         assertEquals("retentionTimeMillis", "2", mqMessage.getBody().get("retentionTimeMillis"));
         mqSubmit.execute(job);
         assertEquals("one message sent", 1, mqClientMock.getSentMessagesCount());
-        assertSame("same message", mqMessage, mqClientMock.getLastMqMessage());
+        assertEquals("same message", mqMessage, mqClientMock.getLastMqMessage());
     }
 
 }

@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd4c243e-04fb-4d6f-a3ee-864e5043d0cb" name="Default" comment="Ranged number generator">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/JobSubmission.java" afterPath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/JobSubmissionControl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/util/RangedValueBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/util/GaussianRangedValueBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/util/RangedValueBuilderTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/util/GaussianRangedValueBuilderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../../example.yml" afterPath="$PROJECT_DIR$/../../../../../example.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example.log" afterPath="$PROJECT_DIR$/example.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example.log.1" afterPath="$PROJECT_DIR$/example.log.1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/Job.java" afterPath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/Job.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/JobGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/JobGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/JobGeneratorGaussian.java" afterPath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/JobGeneratorGaussian.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/jobgenerator/JobGeneratorGaussianTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/jobgenerator/JobGeneratorGaussianTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/mqclient/MqMessage.java" afterPath="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/mqclient/MqMessage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/jobgenerator/MqSubmitterImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/jobgenerator/MqSubmitterImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/mqclient/MqClientMock.java" afterPath="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/mqclient/MqClientMock.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MqSubmitterImplTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MqSubmitterImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/wils/backpressure/jobgenerator/MqSubmitterImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="206">
+              <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -85,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MqMessage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MqMessage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/wils/backpressure/mqclient/MqMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -196,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/jobgenerator/MqSubmitterImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/mqclient/MqClientMock.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/wils/backpressure/jobgenerator/MqSubmitterImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/wils/backpressure/mqclient/MqMessage.java" />
       </list>
     </option>
   </component>
@@ -224,7 +216,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="74" />
     <option name="y" value="66" />
-    <option name="width" value="1694" />
+    <option name="width" value="1361" />
     <option name="height" value="833" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -967,12 +959,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JobSubmissionControlTest - 2017.04.08 at 16h 27m 33s.xml">
-      <configuration name="JobSubmissionControlTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobSubmissionControlTest - 2017.04.08 at 16h 27m 55s.xml">
-      <configuration name="JobSubmissionControlTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JobSubmissionControlTest - 2017.04.08 at 16h 29m 18s.xml">
       <configuration name="JobSubmissionControlTest" configurationId="JUnit" />
     </history-entry>
@@ -997,26 +983,33 @@
     <history-entry file="MqSubmitterImplTest - 2017.04.08 at 20h 12m 03s.xml">
       <configuration name="MqSubmitterImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MqSubmitterImplTest - 2017.04.08 at 20h 36m 10s.xml">
+      <configuration name="MqSubmitterImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqSubmitterImplTest - 2017.04.08 at 20h 38m 46s.xml">
+      <configuration name="MqSubmitterImplTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="66" width="1694" height="833" extended-state="0" />
+    <frame x="74" y="66" width="1361" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5019966" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36238244" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3403694" sideWeight="0.49800342" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3403694" sideWeight="0.49800342" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2585596" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3218222" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1028,7 +1021,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1461,14 +1453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/wils/backpressure/mqclient/MqMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/wils/backpressure/mqclient/MqMessageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1539,8 +1523,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/wils/backpressure/jobgenerator/MqSubmitterImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        <state relative-caret-position="206">
+          <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/wils/backpressure/mqclient/MqMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
           <folding />
         </state>
       </provider>
